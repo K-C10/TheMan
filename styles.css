@@ -13,6 +13,22 @@ body {
     margin-right: auto;
     width: 50%;
     display: block;
+    animation: skibidiImage 5s linear infinite alternate;
+}
+
+@keyframes skibidiImage {
+    0% {
+        border-color: rgb(255, 0, 0);
+    }
+    50% {
+        border-color: rgb(255, 255, 0);
+    }
+    75% {
+        border-color: rgb(0, 255, 255);
+    }
+    100% {
+        border-color: rgb(255, 0, 255);
+    }
 }
 
 .text {
@@ -24,14 +40,16 @@ body {
     border-style: solid;
  
     font-size: 50px;
-    animation: skibidi 0.1s linear 2s infinite alternate;
+    animation: skibiditext 0.1s linear infinite alternate;
 }
 
-@keyframes skibidi {
+@keyframes skibiditext {
     0% {
         color:black;
+        border-color: white;
     }
     100% {
         color: white;
+        border-color: black;
     }
 }
