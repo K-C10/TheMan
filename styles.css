@@ -1,0 +1,37 @@
+body {
+    background-image:url(./assets/chickennugget.png);
+
+}
+
+.image {
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    border-radius: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+
+.text {
+    text-align: center;
+    color: black;
+
+    border-color: red;
+    border-width: thick;
+    border-style: solid;
+ 
+    font-size: 50px;
+    animation: skibidi 0.1s linear 2s infinite alternate;
+}
+
+@keyframes skibidi {
+    0% {
+        color:black;
+    }
+    100% {
+        color: white;
+    }
+}
