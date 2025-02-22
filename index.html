@@ -3,32 +3,29 @@
         <head> 
             <link rel="icon" type="image/x-icon" href="/assets/man.png">
             <link rel="stylesheet" href="styles.css">
+
             <title>The Man</title>
         </head>
 
-        <body> 
+        <body onload="playAudio()"> 
+
+            <audio id="audio" autoplay="true" loop="true">
+                <source src="/assets/joe.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <script>
+                var x = document.getElementById("audio");
+
+                function playAudio() {
+                  x.play();
+                }
+            </script>
+
+            
+
             <header class="text">skibidi toilet rizzler</header>
             
             <img class="image" src="./assets/man.png" alt="TheMan">
-            <!--
-                projects
-                    Coding
-                        page assembler - compleated
-                        FCB tool - compleated
-                
-                    CAD projects   
-                        2024 - 2025 FTC robot - compleated
-                        turbojet engine - in progress
-                        octopus arm - in progress
-                
-                Drone Photos and Projects
-                    Photos
-
-                    WebODM maps
-
-                simple designs
-                    motorcycle tail light adapter - compleated
-
-            -->
         </body>
     </html>
